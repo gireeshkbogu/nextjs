@@ -122,55 +122,55 @@ export default function ScrollableTabsButtonAuto() {
       </TabPanel>
       <TabPanel value={value} index={1}>
 
-    2.0. Inputs - Button
+    1. Buttons
         <Box
             my={4}>
             <OutlinedButtons />
         </Box>
 
-    2.1. Inputs - Button with Icons and Labels
+    2. Button with Icons and Labels
         <Box
             my={4}>
             <IconLabelButtons />
         </Box>
 
-    2.2. Inputs - Button groups - Split button
+    3. Split button
         <Box
             my={4}>
             <SplitButton />
         </Box>
 
-    2.3. Inputs - Checkbox 
+    4. Checkbox 
         <Box
             my={4}>
             <Checkboxes />
         </Box>
 
-    2.4. Inputs - Checkbox with Labels
+    5. Checkbox with Labels
         <Box
             my={4}>
             <CheckboxLabels />
         </Box>
 
-    2.5. Inputs - Floating Action Buttons
+    6. Floating Action Buttons
         <Box
             my={4}>
             <FloatingActionButtons />
         </Box>
 
-    2.6. Inputs - Date and Time
+    7. Date and Time
         <Box
             my={4}>
             <MaterialUIPickers />
         </Box>
 
-    2.7. Inputs - Radio
+    8. Radio Buttons
         <Box
             my={4}>
             <RadioButtonsGroup />
         </Box>
 
-    2.8. Inputs - Select
+    9. Select
         <Box
             my={4}>
             <SimpleSelect />
