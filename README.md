@@ -1,4 +1,5 @@
-# Next.js example
+# Next.js cheatsheet
+Basics cheatsheet explains how to use core and experimental UI components (In Progress.....).
 
 ## How to use
 
