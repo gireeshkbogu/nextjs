@@ -53,12 +53,9 @@ export default function Index() {
         <Typography variant="h3" component="h1" gutterBottom>
           Basics
         </Typography>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Header
-        </Typography>
       </Box>
 
-Material UI has two different components - Core and Lab. Lab is experimental. 
+UI has two different components - Core and Lab. Lab is experimental. 
  Core (Layout, Inputs, Navigation, Surfaces, Feedback, Data Display, Utils) and Lab. <br />
 <br />
 
