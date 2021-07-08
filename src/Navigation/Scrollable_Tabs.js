@@ -28,7 +28,23 @@ import MaterialUIPickers from '../Inputs/Date_Time';
 // Select
 import SimpleSelect from '../Inputs/Select';
 
-
+// SURFACES
+// App Bar
+import PrimarySearchAppBar from '../Surfaces/App_Bar';
+// Paper
+import SimplePaper from '../Surfaces/Paper';
+// Card
+import OutlinedCard from '../Surfaces/Card';
+// Card Interaction
+import RecipeReviewCard from '../Surfaces/Card_Interaction';
+// Media Card
+import MediaCard from '../Surfaces/Card_Media';
+// Media Controls
+import MediaControlCard from '../Surfaces/UI_Controls';
+// Accordion
+import SimpleAccordion from '../Surfaces/Accordion';
+// Accordion with checkboxes
+import ActionsInAccordionSummary from '../Surfaces/Accordion_with_Checkboxes';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -159,15 +175,58 @@ export default function ScrollableTabsButtonAuto() {
             my={4}>
             <SimpleSelect />
         </Box>
-
-
       </TabPanel>
+
       <TabPanel value={value} index={2}>
         Item Three
       </TabPanel>
+
       <TabPanel value={value} index={3}>
-        Item Four
+    1. App Bar
+        <Box
+            my={4}>
+            <PrimarySearchAppBar />
+        </Box>
+    2. Paper
+        <Box
+            my={4}>
+            <SimplePaper />
+        </Box>
+    3. Card
+        <Box
+            my={4}>
+            <OutlinedCard />
+        </Box>
+    4. Card Interaction
+        <Box
+            my={4}>
+            <RecipeReviewCard />
+        </Box>
+    5. Card Media
+        <Box
+            my={4}>
+            <MediaCard />
+        </Box>
+    6. Media Controls
+        <Box
+            my={4}>
+            <MediaControlCard />
+        </Box>    
+    7. Accordion
+        <Box
+            my={4}>
+            <SimpleAccordion />
+        </Box>
+    8. Accordion with check boxes
+        <Box
+            my={4}>
+            <ActionsInAccordionSummary />
+        </Box>
+
+
+
       </TabPanel>
+
       <TabPanel value={value} index={4}>
         Item Five
       </TabPanel>
