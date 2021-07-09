@@ -1,5 +1,5 @@
-# Next.js cheatsheet
-Basics cheatsheet explains how to use core and experimental UI components (In Progress.....).
+# Next.js 
+Reproduce all core and experimental UI components in one page (In Progress.....).
 
 ## How to use
 
