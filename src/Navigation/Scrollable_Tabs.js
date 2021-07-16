@@ -7,28 +7,37 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
-// INPUTS
+// LAYOUT
+// Fluid
+import SimpleContainer from '../Layout/Fluid_Layout';
+import FixedContainer from '../Layout/Fixed_Layout';
+// Grid
+import SpacingGrid from '../Layout/Spacing_Grid';
+import CenteredGrid from '../Layout/Basic_Grid';
 
+// INPUTS
 // Buttons
 import OutlinedButtons from '../Inputs/Button';
 import IconLabelButtons from '../Inputs/Buttons_with_icons';
 import SplitButton from '../Inputs/Button_groups';
 import RadioButtonsGroup from '../Inputs/Radio';
-
 // Checkboxes
 import Checkboxes from '../Inputs/Checkbox';
 import CheckboxLabels from '../Inputs/Checkbox_with_labels';
-
 // Floating Action Button
 import FloatingActionButtons from '../Inputs/Floating_action_button';
-
 // Date and Time
 import MaterialUIPickers from '../Inputs/Date_Time';
-
 // Select
 import SimpleSelect from '../Inputs/Select';
 
+// NAVIGATION
+import SimpleBottomNavigation from '../Navigation/Bottom_Navigation';
+import MiniDrawer from '../Navigation/Minivariant_Drawer';
+
+
 // SURFACES
+
 // App Bar
 import PrimarySearchAppBar from '../Surfaces/App_Bar';
 // Paper
@@ -45,6 +54,39 @@ import MediaControlCard from '../Surfaces/UI_Controls';
 import SimpleAccordion from '../Surfaces/Accordion';
 // Accordion with checkboxes
 import ActionsInAccordionSummary from '../Surfaces/Accordion_with_Checkboxes';
+
+// FEEDBACk
+
+// Progress bar
+import CircularIndeterminate from '../Feedback/Progress_Bar';
+// Linear with label
+import LinearWithValueLabel from '../Feedback/Linear_with_Label';
+// Circular with label
+import CircularStatic from '../Feedback/Circular_with_Label';
+// Interactive Integration
+import CircularIntegration from '../Feedback/Interactive_Integration';
+import { Container } from '@material-ui/core';
+// Alert Dialog
+import AlertDialog from '../Feedback/Dialog.js';
+// Simple Snackbar
+import SimpleSnackbar from '../Feedback/Snack_Bar';
+// Positioned Snackbar
+import PositionedSnackbar from '../Feedback/Positioned_Snack_Bar';
+import ConsecutiveSnackbars from '../Feedback/Consecutive_Snack_Bar';
+import SimpleBackdrop from '../Feedback/Backdrop';
+
+// Data Display
+
+// Image Avatars
+import ImageAvatars from '../Data_Display/Image_Avatar';
+// Letter Avatars
+// import stringAvatar from '../Data_Display/Letter_Avatars';
+// Image Avatar Sizes
+//import ImageAvatarsSize from '../Data_Display/Sizes_Avatar';
+// Simple Badge
+import SimpleBadge from '../Data_Display/Badge';
+
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -118,7 +160,20 @@ export default function ScrollableTabsButtonAuto() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Item One
+      1. Fixed
+        <FixedContainer/>
+        <br/>
+      2. Fluid
+        <SimpleContainer/>
+        <br/>
+      3. Spacing Grid
+        <SpacingGrid/>
+        <br/>
+      4. Simple Centered Grid
+        <CenteredGrid/>
+        <br/>
+        <br/>
+
       </TabPanel>
       <TabPanel value={value} index={1}>
 
@@ -178,7 +233,14 @@ export default function ScrollableTabsButtonAuto() {
       </TabPanel>
 
       <TabPanel value={value} index={2}>
-        Item Three
+    1. Bottom Navigation
+        <SimpleBottomNavigation/>
+        <br/>
+    2. MiniDrawer
+        <Box>
+          <MiniDrawer/>
+        </Box>
+
       </TabPanel>
 
       <TabPanel value={value} index={3}>
@@ -222,16 +284,67 @@ export default function ScrollableTabsButtonAuto() {
             my={4}>
             <ActionsInAccordionSummary />
         </Box>
-
-
-
       </TabPanel>
 
       <TabPanel value={value} index={4}>
-        Item Five
+    1. Progress Bar
+        <Box
+            my={4}>
+            <CircularIndeterminate />
+        </Box>
+    2. Linear with Label
+        <Box
+            my={4}>
+            <LinearWithValueLabel />
+        </Box>
+    3. Circular with Label
+        <Box
+            my={4}>
+            <CircularStatic />
+        </Box>
+    4. Interactive Circular Integration
+        <Box
+            my={4}>
+            <CircularIntegration />
+        </Box>
+    5. Alert Dialog
+        <Box
+            my={4}>
+            <AlertDialog />
+        </Box>
+    6. Simple Snackbar
+        <Box
+            my={4}>
+            <SimpleSnackbar />
+        </Box>
+    7. Positioned Snackbar
+        <Box
+            my={4}>
+            <PositionedSnackbar />
+        </Box>
+    8. Consecutive Snackbar
+        <Box
+            my={4}>
+            <ConsecutiveSnackbars />
+        </Box>
+    9. Simple Backdrop
+        <Box
+            my={4}>
+            <SimpleBackdrop />
+        </Box>
+        
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Item Six
+    1. Image Avatars
+        <Box
+            my={4}>
+            <ImageAvatars />
+        </Box>
+    2. Simple Badge
+        <Box
+            my={4}>
+            <SimpleBadge />
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={6}>
         Item Seven

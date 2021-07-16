@@ -5,8 +5,6 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import ProTip from '../src/ProTip';
-import Link from '../src/Link';
-
 
 // INPUTS
 
@@ -44,14 +42,18 @@ import DescriptionAlerts from '../src/Alerts';
 import ComboBox from '../src/Autocomplete';
 import Copyright from '../src/Copyright';
 import { palette } from '@material-ui/system';
+import FixedContainer from '../src/Layout/Fixed_Layout';
+import SimpleContainer from '../src/Layout/Fluid_Layout';
+
 
 export default function Index() {
   return (
     //<Container maxWidth="sm">
-    <Container >
+    <Container maxWidth="lg" >
       <Box my={4}>
         <Typography variant="h3" component="h1" gutterBottom>
-          Basics
+          <br />
+          Basics (4.12.1)
         </Typography>
       </Box>
 
@@ -67,9 +69,6 @@ UI has two different components - Core and Lab. Lab is experimental.
 <br />
 
       <Box my={4}>
-        <Link href="/about" color="secondary">
-            Go to the about page
-          </Link>
           <ProTip />
           <Copyright />
       </Box>
