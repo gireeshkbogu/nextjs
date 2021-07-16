@@ -1,5 +1,5 @@
 # Next.js (MUI version- 4.12.1)
-Reproduce all core and experimental UI components in one page (In Progress.....).
+Reproduce all core and experimental UI components in one page.
 
 ## How to use
 
