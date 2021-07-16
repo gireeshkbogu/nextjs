@@ -85,8 +85,42 @@ import ImageAvatars from '../Data_Display/Image_Avatar';
 //import ImageAvatarsSize from '../Data_Display/Sizes_Avatar';
 // Simple Badge
 import SimpleBadge from '../Data_Display/Badge';
+// Chips
+import Chips from '../Data_Display/Chip';
+// OutlinedChips
+import OutlinedChips from '../Data_Display/Outlined_Chips';
+import ChipsArray from '../Data_Display/Chip_Array';
+// Dividers
+import ListDividers from '../Data_Display/List_Dividers';
+import InsetDividers from '../Data_Display/Inset_Dividers';
+import VerticalDividers from '../Data_Display/Vertical_dividers';
+// icons
+import SvgMaterialIcons from '../Data_Display/Material_Icons';
+import SvgIconsColor from '../Data_Display/Color_Icons';
+import SvgIconsSize from '../Data_Display/Icon_Size';
+// List
+import SimpleList from '../Data_Display/SimpleList';
+// Data table
+import DataTable from '../Data_Display/DataTable';
+// Switch 
+import SwitchListSecondary from '../Data_Display/Switch';
+// Checkbox list
+import CheckboxListSecondary from '../Data_Display/Checkbox_List_Secondary';
+// Item List
+import AlignItemsList from '../Data_Display/Align_Item_List';
+// Typohgraphy
+import Types from '../Data_Display/Typography';
 
 
+// Lab
+import DescriptionAlerts from '../Lab/Alerts';
+import ComboBox from '../Lab/Autocomplete';
+import { Alert } from '@material-ui/lab';
+
+// Utils
+// Transition
+import SimpleCollapse from '../Utils/Transitions'
+import SimplePopover from '../Utils/Popover';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -345,12 +379,106 @@ export default function ScrollableTabsButtonAuto() {
             my={4}>
             <SimpleBadge />
         </Box>
+    3. Chips
+        <Box
+            my={4}>
+            <Chips />
+        </Box>
+    4. Outlines Chips
+        <Box
+            my={4}>
+            <OutlinedChips />
+        </Box>
+    5. Chips Array
+        <Box
+            my={4}>
+            <ChipsArray />
+        </Box>
+    6. List Dividers
+        <Box
+            my={4}>
+            <ListDividers />
+        </Box>
+    7. Inset Dividers
+        <Box
+            my={4}>
+            <InsetDividers />
+        </Box>
+    8. Vertical Dividers
+        <Box
+            my={4}>
+            <VerticalDividers/>
+        </Box>
+    9. Color Icons
+        <Box
+            my={4}>
+            <SvgIconsColor/>
+        </Box>
+    10. Icon Size
+        <Box
+            my={4}>
+            <SvgIconsSize/>
+        </Box>
+    11. Material Icons
+        <Box
+            my={4}>
+            <SvgMaterialIcons/>
+        </Box>
+    12. Simple List
+        <Box
+            my={4}>
+            <SimpleList/>
+        </Box>
+    13. Data Table
+        <Box
+            my={4}>
+            <DataTable/>
+        </Box>
+    14. Switch
+        <Box
+            my={4}>
+            <SwitchListSecondary/>
+        </Box>
+    15. Checkbox List
+        <Box
+            my={4}>
+            <CheckboxListSecondary/>
+        </Box>
+    16. Align Item List
+        <Box
+            my={4}>
+            <AlignItemsList/>
+        </Box>
+    17. Typography Types
+        <Box
+            my={4}>
+            <Types/>
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={6}>
-        Item Seven
+      1.  Transition - Collapse)
+        <Box
+            my={4}>
+            <SimpleCollapse/>
+        </Box>
+      2.  Popover 
+        <Box
+            my={4}>
+            <SimplePopover/>
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={7}>
-        Item Eight
+      1. Alerts
+        <Box
+            my={4}>
+            <DescriptionAlerts/>
+        </Box>
+        2. Autocomplete
+        <Box
+            my={4}>
+            <ComboBox/>
+        </Box>
+
       </TabPanel>
     </div>
   );

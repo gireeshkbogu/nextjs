@@ -33,13 +33,6 @@ import SimpleSelect from '../src/Inputs/Select';
 // Tabs
 import CenteredTabs from '../src/Navigation/Tabs';
 import ScrollableTabsButtonAuto from '../src/Navigation/Scrollable_Tabs';
-
-import DataTable from '../src/DataTable';
-import SimpleList from '../src/SimpleList';
-import SwitchListSecondary from '../src/Switch';
-import SimpleCollapse from '../src/Transitions';
-import DescriptionAlerts from '../src/Alerts';
-import ComboBox from '../src/Autocomplete';
 import Copyright from '../src/Copyright';
 import { palette } from '@material-ui/system';
 import FixedContainer from '../src/Layout/Fixed_Layout';
