@@ -28,7 +28,7 @@ export default function ProTip() {
     <Typography className={classes.root} color="textSecondary">
       <LightBulbIcon className={classes.lightBulb} />
       Source: {' '}
-      <Link href="https://material-ui.com/components/">Material-UI documentation.</Link>  
+      <Link href="https://material-ui.com/getting-started/usage/">Material-UI documentation.</Link>  
     </Typography>
   );
 }
