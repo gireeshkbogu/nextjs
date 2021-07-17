@@ -1,4 +1,4 @@
-# Next.js (MUI version- 4.12.1)
+# Next.js (Material UI - 4.12.1)
 Reproduce all core and experimental UI components in one page.
 
 ## How to use
